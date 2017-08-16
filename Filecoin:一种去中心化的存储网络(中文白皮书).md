@@ -66,7 +66,9 @@ Filecoin是一个去中心化存储网络，它让云存储变成一个算法市
 
 
 
-*注意：Filecoin是一项正在进行的工作。正在进行积极的研究，本文的新版本将会出现在https://filecoin.io。如有意见和建议，请通过research@filecoin.io与我们联系*
+*注意：Filecoin是一项正在进行的工作。正在进行积极的研究，本文的新版本将会出现在https://filecoin.io*
+
+*如有意见和建议，请通过research@filecoin.io与我们联系*
 
 
 
@@ -215,9 +217,9 @@ PDP和PoR方案只保证了证明人在响应的时候拥有某些数据。在Fi
 
 **定义3.1**
 
-*PoRep方案使得有效的证明人P能说服验证者V，数据D的一个P专用的独立物理副本R已被存储。PoRep协议其特征是多项式时间算法的元组：*
+*PoRep方案使得有效的证明人P能说服验证者V，数据D的一个P专用的独立物理副本R已被存储。PoRep协议其特征是多项式时间算法的元组：*	*(Setup, Prove, Verify)*
 
-​					*(Setup, Prove, Verify)*
+
 
 - PoRep.Setup(1<sup>λ</sup>, D) → R, S<sub>P</sub> , S<sub>V</sub> , 其中S<sub>P</sub>和S<sub>V</sub>是P和V的特点方案的设置变量，λ是一个安全参数。PoRep.Setup用来生成副本R，并且给予P和V必要的信息来运行PoRep.Prove 和 PoRep.Verify。一些方案可能要求证明人或者是有互动的第三方去运算PoRep.Setup。
 - PoRep.Prove(S<sub>P</sub> , R, c) → π<sup>c</sup>，其中c是验证人V发出的随机验证， π<sup>c</sup>是证明人产生的可以访问数据D的特定副本R的证明。PoRep.Prove由P（证明人）为V（验证者）运行生成π<sup>c</sup>。
@@ -233,9 +235,9 @@ PDP和PoR方案只保证了证明人在响应的时候拥有某些数据。在Fi
 
 **定义3.2**
 
-*（时空证明）Post方案使得有效的证明人P能够说服一个验证者V相信P在一段时间内已经存储了一些数据D。PoSt其特征是多项式时间算法的元组：
+*（时空证明）Post方案使得有效的证明人P能够说服一个验证者V相信P在一段时间内已经存储了一些数据D。PoSt其特征是多项式时间算法的元组： 	*(Setup, Prove, Verify)*
 
-​				*(Setup, Prove, Verify)*
+
 
 - PoSt.Setup(1<sup>λ</sup>,D)->S<sub>p</sub>，S<sub>v</sub>，其中S<sub>P</sub>和S<sub>V</sub>是P和V的特点方案的设置变量，λ是一个安全参数。PoSt.Setup用来给予P和V必要的信息来运行PoSt.Prove 和 PoSt.Prove。一些方案可能要求证明人或者是有互动的第三方去运算PoSt.Setup。
 - PoSt.Prove(S<sub>p</sub> , D, c, t) → π<sup>c</sup>，其中c是验证人V发出的随机验证， π<sup>c</sup>是证明人在一段时间内可以访问数据D的的证明。PoSt.Prove由P（证明人）为V（验证者）运行生成π<sup>c</sup>。
@@ -261,9 +263,9 @@ PDP和PoR方案只保证了证明人在响应的时候拥有某些数据。在Fi
 
 **zk-SNARKs** 我们的PoRep和PoSt的实际实现依赖于零知识证明的简洁的非交互式知识论（zk-SNARKs)[6,7,8]。因为zk-SNARKs是简洁的，所以证明很短并且很容易验证。更正式地，让L为NP语言，C为L的决策电路。受信任的一方进行一次设置阶段，产生两个公共密钥：证明密钥pk和验证密钥vk。证明密钥pk使任何（不可信）的证明者都能产生证明证明π，对于她选择的实例x，x∈L。非交互式证明π是零知识和知识证明。任何人都可以使用验证密钥vk验证证明π。特别是zk-SNARK的证明可公开验证：任何人都可以验证π，而不与产生π的证明者进行交互。证明π具有恒定的大小，并且可以在| x |中线性的时间内验证。
 
-可满足电路可靠？的zk-SNARKs是多项式时间算法的元组：
+可满足电路可靠？的zk-SNARKs是多项式时间算法的元组：*(KeyGen, Prove, Verify)*
 
-​							*(KeyGen, Prove, Verify)*
+
 
 - KeyGen(1<sup>λ</sup>,C)→ (pk, vk)，输入安全参数λ和电路C，KeyGen产生概率样本pk和vk。这两个键作为公共参数发布，可在L<sub>c</sub>上用于证明/验证。
 - Prove(pk, x, w) → π 在输入pk、输入x和NP声明w的见证时，证明人为语句x∈L<sub>C</sub>输出非交互式证明π。
@@ -294,7 +296,9 @@ Setup
 - inputs:
 
   – prover key pair (pkP ,skP )
+
   – prover SEAL key pkSEAL
+
   – data D
 
 - outputs: replica R, Merkle root rt of R, proof πSEAL
@@ -306,7 +310,9 @@ Prove
 - inputs:
 
   – prover Proof-of-Storage key pkPOS
+
   – replica R
+
   – random challenge c
 
 
@@ -319,11 +325,16 @@ Verify
 - inputs:
 
   – prover public key, pk<sub>P</sub>
+
   – verifier SEAL and POS keys vkSEAL, vkPOS
+
   – hash of data D, h<sub>D</sub>
+
   – Merkle root of replica R, rt
+
   – random challenge, c
-  – tuple of proofs, (<sup>π<sup>SEAL, <sup>π</sup>POS)
+
+  – tuple of proofs, (πSEAL, πPOS)
 
 - outputs: bit b, equals 1 if proofs are valid
 
@@ -344,8 +355,11 @@ Prove
 - inputs:
 
   – prover PoSt key pk<sub>POST</sub>
+
   – replica R
+
   – random challenge c
+
   – time parameter t
 
 - outputs: a proof π<sub>POST</sub>
