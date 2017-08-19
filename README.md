@@ -12,7 +12,7 @@
 
 
 
-[Filecoin中文白皮书](https://github.com/toxotguo/thinking/blob/master/Filecoin:一种去中心化的存储网络(中文白皮书).md)
+[Filecoin中文白皮书](https://github.com/toxotguo/thinking/blob/master/Filecoin:一种去中心化的存储网络(中文白皮书).pdf)
 
 
 
