@@ -14,7 +14,7 @@
 
 [Filecoin中文白皮书](https://github.com/toxotguo/thinking/blob/master/Filecoin:一种去中心化的存储网络(中文白皮书).pdf)
 
-
+[浅谈以太坊智能合约的设计模式与升级方法](https://github.com/toxotguo/thinking/blob/master/浅谈以太坊智能合约的设计模式与升级方法.md)
 
 
 
