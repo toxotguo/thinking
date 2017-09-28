@@ -16,6 +16,8 @@
 
 [浅谈以太坊智能合约的设计模式与升级方法](https://github.com/toxotguo/thinking/blob/master/浅谈以太坊智能合约的设计模式与升级方法.md)
 
+
+
 [闪电网络学习研究总结](https://github.com/toxotguo/thinking/blob/master/闪电网络学习研究 -2016.pdf)
 
 
