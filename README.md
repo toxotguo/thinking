@@ -22,3 +22,5 @@
 
 [闲聊以太坊的去中心化交易所](https://github.com/toxotguo/thinking/blob/master/闲聊以太坊的去中心化交易所.md)
 
+[雷电网络开发预览版-初体验](https://github.com/toxotguo/thinking/blob/master/雷电网络开发预览版-初体验.md)
+
