@@ -23,5 +23,5 @@
 
 [雷电网络开发预览版-初体验](https://github.com/toxotguo/thinking/blob/master/雷电网络开发预览版-初体验.md)
 
-[译文：以太坊Sharding FAQ](https://github.com/toxotguo/thinking/blob/master/译文：以太坊Sharding FAQ.md)
+[译文：以太坊Sharding FAQ](https://github.com/toxotguo/thinking/blob/master/%E8%AF%91%E6%96%87%EF%BC%9A%E4%BB%A5%E5%A4%AA%E5%9D%8ASharding%20FAQ.md)
 
