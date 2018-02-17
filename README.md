@@ -27,5 +27,5 @@
 
 [Decred atomicswap 跨链原子资产转移工具包](https://github.com/toxotguo/thinking/blob/master/Decred%20atomicswap%20%E8%B7%A8%E9%93%BE%E5%8E%9F%E5%AD%90%E8%B5%84%E4%BA%A7%E8%BD%AC%E7%A7%BB%E5%B7%A5%E5%85%B7%E5%8C%85.md)
 
-
+[以太坊分片](https://github.com/toxotguo/thinking/blob/master/Ethereum%20Sharding.pdf)
 
