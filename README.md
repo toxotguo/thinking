@@ -29,3 +29,5 @@
 
 [以太坊分片](https://github.com/toxotguo/thinking/blob/master/Ethereum%20Sharding.pdf)
 
+[联盟链缩容](https://github.com/toxotguo/thinking/blob/master/%E8%81%94%E7%9B%9F%E9%93%BE%E5%8A%A8%E6%80%81%E7%BC%A9%E5%AE%B9%E6%96%B9%E6%A1%88.pdf)
+
