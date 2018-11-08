@@ -31,3 +31,5 @@
 
 [联盟链缩容](https://github.com/toxotguo/thinking/blob/master/%E8%81%94%E7%9B%9F%E9%93%BE%E5%8A%A8%E6%80%81%E7%BC%A9%E5%AE%B9%E6%96%B9%E6%A1%88.pdf)
 
+[Substrate 为区块链创新而来](https://github.com/toxotguo/thinking/blob/master/Substrate%20%E4%B8%BA%E5%8C%BA%E5%9D%97%E9%93%BE%E5%88%9B%E6%96%B0%E8%80%8C%E6%9D%A5.md)
+
