@@ -33,3 +33,5 @@
 
 [Substrate 为区块链创新而来](https://github.com/toxotguo/thinking/blob/master/Substrate%20%E4%B8%BA%E5%8C%BA%E5%9D%97%E9%93%BE%E5%88%9B%E6%96%B0%E8%80%8C%E6%9D%A5.md)
 
+[浅谈资产跨链](https://github.com/toxotguo/thinking/blob/master/浅谈资产跨链.md)
+
