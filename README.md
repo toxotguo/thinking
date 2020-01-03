@@ -35,3 +35,7 @@
 
 [浅谈资产跨链](https://github.com/toxotguo/thinking/blob/master/浅谈资产跨链.md)
 
+
+[PoolDAO项目白皮书](https://github.com/toxotguo/thinking/blob/master/PoolDAO%E7%99%BD%E7%9A%AE%E4%B9%A6v0.3.pdf)
+
+
